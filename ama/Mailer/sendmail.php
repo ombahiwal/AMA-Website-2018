@@ -54,7 +54,7 @@ $to = "amaaurangabad2015@gmail.com";  // AMA email here
 include 'classes/class.phpmailer.php';
    $mail= new PHPMailer();
 // comment isSMTP
-  //  $mail->isSMTP();
+ $mail->isSMTP();
    $mail->SMTPDebug=0;
    $mail->SMTPAuth=true;
    $mail->SMTPSecure='ssl';

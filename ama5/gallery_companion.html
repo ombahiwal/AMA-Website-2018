@@ -1,0 +1,281 @@
+
+
+<!DOCTYPE html>
+<html>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122226929-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-122226929-1');
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NLMFCSS');</script>
+<!-- End Google Tag Manager -->
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <style>
+        
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+        
+        #myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 800px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+        .mod{
+            transition: 0.5s;
+            border-radius: 5px;
+        }
+        
+        .mod:hover{
+            opacity: 0.9;
+           transform: scale(1.5)
+        }
+        
+</style>
+<body>
+
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+   
+      
+       <img class="mod" onclick="modalfun(this)" alt="AMA-RS-8 by Rushi Bagla 25/07/13" src="./rareshare_photos/25.jpg" style="width:100%">
+      <img class="mod" onclick="modalfun(this)" alt="AMA-RS-9 by Munish Sharma 22/08/13" src="./rareshare_photos/26.jpg" style="width:100%">
+      <img class="mod" onclick="modalfun(this)" alt="AMA-RS-11 by Sunil Raithatha 24/10/13" src="./rareshare_photos/27.jpg" style="width:100%">
+      <img class="mod" onclick="modalfun(this)" alt="AMA-RS-12 by Sanjiv Kumar 23/11/13" src="./rareshare_photos/28.jpg" style="width:100%">
+      <img class="mod" onclick="modalfun(this)" alt="AMA-RS-13 by Raju Anand 25/01/14" src="./rareshare_photos/29.jpg" style="width:100%">
+      <img class="mod" onclick="modalfun(this)" alt="AMA-RS-14 by Ashwin Malhotra 20-02-14" src="./rareshare_photos/30.jpg" style="width:100%">
+      <img class="mod" onclick="modalfun(this)" alt="AMA-RS-15 by Charul & Vinay 08-03-14" src="./rareshare_photos/31.jpg" style="width:100%">
+      <img class="mod" onclick="modalfun(this)" alt="AMA-RS-16 by Satish Jayram 30-04-14 " src="./rareshare_photos/32.jpg" style="width:100%">
+      <img class="mod" onclick="modalfun(this)" alt="AMA-RS-17 by Milind Kank 24-07-14" src="./rareshare_photos/33.jpg" style="width:100%">
+           <img class="mod" onclick="modalfun(this)" alt="Photo-1" src="./rareshare_photos/1.jpg" style="width:100%"><img class="mod" onclick="modalfun(this)" alt="Photo-2" src="./rareshare_photos/2.jpg" style="width:100%"><img class="mod" onclick="modalfun(this)" alt="Photo-3" src="./rareshare_photos/3.jpg" style="width:100%"><img class="mod" onclick="modalfun(this)" alt="Photo-4" src="./rareshare_photos/4.jpg" style="width:100%"> 
+      
+    </div>
+    
+  <div class="column">
+         
+      
+        <img class="mod" onclick="modalfun(this)" alt="AMA-RS-18 by Ram Kaundeniya 12-09-14" src="./rareshare_photos/34.jpg" style="width:100%">
+      <img class="mod" onclick="modalfun(this)" alt="AMA-RS-19 by Cdr Anil Save 25-09-14" src="./rareshare_photos/35.jpg" style="width:100%">
+      <img class="mod" onclick="modalfun(this)" alt="AMA-RS-20 by Milind Kelkar 30-10-14-A" src="./rareshare_photos/36.jpg" style="width:100%">
+      <img class="mod" onclick="modalfun(this)" alt="AMA-RS-20 by Milind Kelkar 30-10-14-B" src="./rareshare_photos/37.jpg" style="width:100%">
+      <img class="mod" onclick="modalfun(this)" alt="AMA-RS-21 by Kiran-Seth 13-11-14" src="./rareshare_photos/38.jpg" style="width:100%">
+      <img class="mod" onclick="modalfun(this)" alt="AMA-RS-22 by Ranjeet Das 05-12-14" src="./rareshare_photos/39.jpg" style="width:100%">
+      <img class="mod" onclick="modalfun(this)" alt="AMA-RS-23 by Tambolkar 15-01-15-A" src="./rareshare_photos/40.jpg" style="width:100%">
+      <img class="mod" onclick="modalfun(this)" alt="AMA-RS-23 by Tambolkar 15-01-15-B" src="./rareshare_photos/41.jpg" style="width:100%">
+      <img class="mod" onclick="modalfun(this)" alt="AMA-RS-26 Capt.Piyush Shinha 25-04-15" src="./rareshare_photos/42.jpg" style="width:100%">
+     
+            
+  </div>
+    
+  <div class="column">
+  
+        <img class="mod" onclick="modalfun(this)" alt="AMA-RS-28 Dr. Madhavrao Chitale  23-07-15" src="./rareshare_photos/44.jpg" style="width:100%">
+      <img class="mod" onclick="modalfun(this)" alt="AMA-RS-29 Tarang Jain 20-08-2015" src="./rareshare_photos/45.jpg" style="width:100%">
+      <img class="mod" onclick="modalfun(this)" alt="AMA-RS-31 Ram Bhogale 26-10-2015" src="./rareshare_photos/46.jpg" style="width:100%">
+      <img class="mod" onclick="modalfun(this)" alt="AMA-RS-32 CJ Karira 23-11-2015" src="./rareshare_photos/47.jpg" style="width:100%">
+      <img class="mod" onclick="modalfun(this)" alt="AMA-RS-34 Abhay Deshpande 25-02-2016" src="./rareshare_photos/48.jpg" style="width:100%">
+      <img class="mod" onclick="modalfun(this)" alt="AMA-RS-35 CP Tripathi 07-04-2016" src="./rareshare_photos/49.jpg" style="width:100%">
+      <img class="mod" onclick="modalfun(this)" alt="AMA-RS-36 HR Gaikwad 05-05-2016" src="./rareshare_photos/50.jpg" style="width:100%">
+      <img class="mod" onclick="modalfun(this)" alt="AMA-RS-37 Shailesh Sheth 28-07-2016" src="./rareshare_photos/51.jpg" style="width:100%">
+      <img class="mod" onclick="modalfun(this)" alt="AMA-RS-38 Mansingh Pawar 22-09-2016" src="./rareshare_photos/52.jpg" style="width:100%">
+            <img class="mod" onclick="modalfun(this)" alt="Photo-13" src="./rareshare_photos/13.jpg" style="width:100%"><img class="mod" onclick="modalfun(this)" alt="Photo-14" src="./rareshare_photos/14.jpg" style="width:100%"><img class="mod" onclick="modalfun(this)" alt="Photo-15" src="./rareshare_photos/15.jpg" style="width:100%"><img class="mod" onclick="modalfun(this)" alt="Photo-16" src="./rareshare_photos/16.jpg" style="width:100%">
+      <img class="mod" onclick="modalfun(this)" alt="Photo-17" src="./rareshare_photos/17.jpg" style="width:100%">
+      <img class="mod" onclick="modalfun(this)" alt="Photo-18" src="./rareshare_photos/18.jpg" style="width:100%">
+       <img class="mod" onclick="modalfun(this)" alt="Photo-6" src="./rareshare_photos/6.jpg" style="width:100%">  
+      <img class="mod" onclick="modalfun(this)" alt="Photo-7" src="./rareshare_photos/7.jpg" style="width:100%"><img class="mod" onclick="modalfun(this)" alt="Photo-8" src="./rareshare_photos/8.jpg" style="width:100%"><img class="mod" onclick="modalfun(this)" alt="Photo-9" src="./rareshare_photos/9.jpg" style="width:100%"><img class="mod" onclick="modalfun(this)" alt="Photo-10" src="./rareshare_photos/10.jpg" style="width:100%"><img class="mod" onclick="modalfun(this)" alt="Photo-11" src="./rareshare_photos/11.jpg" style="width:100%"><img class="mod" onclick="modalfun(this)" alt="Photo-12" src="./rareshare_photos/12.jpg" style="width:100%">
+      
+    </div>
+  <div class="column">
+    
+    
+     <img class="mod" onclick="modalfun(this)" alt="AMA-RS-40 Bhavookh Tripathi 24-11-2016" src="./rareshare_photos/53.jpg" style="width:100%">
+      <img class="mod" onclick="modalfun(this)" alt="AMA-RS-42 Muktak-Joshi 23-02-2017" src="./rareshare_photos/54.jpg" style="width:100%">
+      <img class="mod" onclick="modalfun(this)" alt="AMA-RS-43 Ganesh Natarajan 30-03-2017" src="./rareshare_photos/55.jpg" style="width:100%">
+      <img class="mod" onclick="modalfun(this)" alt="AMA-RS-44 Girish-Chitale 20-07-2017" src="./rareshare_photos/56.jpg" style="width:100%">
+      <img class="mod" onclick="modalfun(this)" alt="AMA-RS-45 Premnath Venugopalan 12-09-2017" src="./rareshare_photos/57.jpg" style="width:100%">
+      <img class="mod" onclick="modalfun(this)" alt="AMA-RS-46 Venkatraman Pichumani 21-09-2017" src="./rareshare_photos/58.jpg" style="width:100%">
+      <img class="mod" onclick="modalfun(this)" alt="AMA-RS-47 Baba Bhand 14-12-2017" src="./rareshare_photos/59.jpg" style="width:100%">
+      <img class="mod" onclick="modalfun(this)" alt="AMA-RS-48 Sunil Kirdak 11-01-2018" src="./rareshare_photos/60.jpg" style="width:100%">
+      <img class="mod" onclick="modalfun(this)" alt="AMA-RS-49 Natasha-Zarine 07-02-2018" src="./rareshare_photos/61.jpg" style="width:100%">
+      <img class="mod" onclick="modalfun(this)" alt="AMA-RS-50 Mr. Nandkishor Kagliwal 22-03-2018" src="./rareshare_photos/62.jpg" style="width:100%">
+      <img class="mod" onclick="modalfun(this)" alt="AMA-RS-51 Mr. Sanjay Bangar 28-05-2018" src="./rareshare_photos/63.jpg" style="width:100%">
+           
+      
+       <img class="mod" onclick="modalfun(this)" alt="Photo-19" src="./rareshare_photos/19.jpg" style="width:100%"><img class="mod" onclick="modalfun(this)" alt="Photo-20" src="./rareshare_photos/20.jpg" style="width:100%"><img class="mod" onclick="modalfun(this)" alt="Photo-21" src="./rareshare_photos/21.jpg" style="width:100%"><img class="mod" onclick="modalfun(this)" alt="Photo-22" src="./rareshare_photos/22.jpg" style="width:100%"><img class="mod" onclick="modalfun(this)" alt="Photo-23" src="./rareshare_photos/23.jpg" style="width:100%"><img class="mod" onclick="modalfun(this)" alt="Photo-24" src="./rareshare_photos/24.jpg" style="width:100%"> 
+       <img class="mod" onclick="modalfun(this)" alt="AMA-RS-27 IAS Sunil Kendrekar  28-05-15" src="./rareshare_photos/43.jpg" style="width:100%">
+       <img class="mod" onclick="modalfun(this)" alt="Photo-7" src="./rareshare_photos/7.jpg" style="width:100%">
+    </div>
+</div>
+
+</body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NLMFCSS"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <script>
+    var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+function modalfun(img){
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+    modal.style.display = "block";
+    modalImg.src = img.src;
+    captionText.innerHTML = img.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+
+    </script>
+</html>
